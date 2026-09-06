@@ -1,0 +1,11 @@
+Name: Prashanth G
+Wife's Name: Jyothi G
+Daughter's: Hanvika
+
+Technologes known: Java, AI, RAG, MCP, Agentic AI, Spring Boot, HTML, JS, CSS, Databases, Langchain
+Languages: Kannada, English, Hindi, Tamil, Telugu
+Passion: I am very much passionate about teaching
+
+Hobbies: Badminton, Guitar, TT, Foosball
+
+Projects: AI support chatbot, Resume Analyser, SAP DataAnalytics Dashboard builder
