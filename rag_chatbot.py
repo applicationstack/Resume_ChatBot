@@ -7,8 +7,19 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv()
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
+
+def get_api_key() -> str | None:
+    key = os.getenv("OPENAI_API_KEY")
+    if key:
+        return key
+    try:
+        return st.secrets["OPENAI_API_KEY"]
+    except Exception:
+        return None
+
+
+OPENAI_API_KEY = get_api_key()
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 EMBEDDING_MODEL = "text-embedding-3-small"
